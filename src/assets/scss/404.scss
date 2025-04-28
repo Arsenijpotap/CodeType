@@ -1,0 +1,27 @@
+@import "basic";
+.error {
+	margin: 30vh auto 0 auto;
+	width: 70vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__title {
+		font-size: 5vw;
+	}
+
+	&__text {
+		font-size: 2vw;
+	}
+
+	&__link {
+		margin-top: 0.5vw;
+		opacity: 0.3;
+		transition: 0.5s;
+		font-size: 1.5vw;
+		color: $light;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

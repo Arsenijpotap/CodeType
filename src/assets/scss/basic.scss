@@ -1,0 +1,49 @@
+@import "reset", "fonts", "vars";
+html {
+	// filter: invert(1);
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	font-size: calc(15.4px);
+}
+
+[role="button"],
+[role="link"],
+[role="menuitem"],
+[role="switch"],
+[role="tab"],
+[role="tabpanel"],
+button,
+a {
+	cursor: pointer;
+}
+
+[tabindex="0"]:focus-visible,
+*:focus-visible {
+	outline: 2px solid #069dc7;
+	border-color: #069dc7;
+}
+body {
+	font-family: $main-font !important;
+
+	color: $light;
+
+	background-color: $background;
+	&.active {
+		overflow: hidden;
+	}
+}
+* {
+	font-family: $main-font !important;
+}
+.conteiner {
+	width: 90vw;
+	margin: 0 auto;
+}
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

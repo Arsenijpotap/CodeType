@@ -1,0 +1,32 @@
+.result {
+  position: relative;
+  padding: 10vw 0 10vw 0;
+}
+
+.result::before {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(20, 17, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 110%;
+}
+
+.result__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.result__chart-box {
+  padding-top: 4vw;
+  width: 40vw;
+  height: 30vw;
+  padding-right: 2vw;
+}
+
+.result__info {
+  width: 50vw;
+}
